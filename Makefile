@@ -69,3 +69,6 @@ ftracer:
 
 libsnappyc.so.1: snappy.o
 	$(CC) $(LDFLAGS) -shared -o $@ $^
+
+test: verify sgverify
+	./test.sh
